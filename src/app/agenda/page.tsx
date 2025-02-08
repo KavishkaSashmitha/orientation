@@ -2,9 +2,10 @@ import EventCard from "@/components/EventCard";
 //import HeaderAnimation from "@/components/HeaderAnimation/HeaderAnimation";
 import { AgendaData } from "@/data/AgendaData";
 import { CalendarFold, MapPin } from "lucide-react";
-import { Chakra_Petch, Plus_Jakarta_Sans } from "next/font/google";
+import { Chakra_Petch, Plus_Jakarta_Sans, DM_Sans } from "next/font/google";
 import Image from "next/image";
 import Link from "next/link";
+import AgendaIcon from "/public/agenda-title.svg";
 
 const plusJakartaSans = Plus_Jakarta_Sans({
   weight: ["400"],
@@ -16,34 +17,40 @@ const chakra = Chakra_Petch({
   subsets: ["latin"],
 });
 
+const dm_Sans = DM_Sans({
+  weight: ["400", "600"],
+  subsets: ["latin"],
+});
+
 export default function Home() {
   return (
     <main className="relative bg-white">
       {/* <HeaderAnimation /> */}
 
       <div className="max-w-[500px] mx-auto pb-20 px-4">
-        <div className={`${plusJakartaSans.className} text-center mt-10`}>
-          <h1 className="text-[46px] leading-0 text-black mb-4">Agenda</h1>
-          <div className={`${chakra.className}`}>
-            <p className="text-black font-semibold leading-0 text-[25px] uppercase">
-              SE Orientation
+        <div className={`${dm_Sans.className} text-center mt-10`}>
+        <Image src={AgendaIcon} alt="Agenda" className="w-[300px] h-[300px] mb-4 mx-auto" />
+          
+          <div className={`${dm_Sans.className}`}>
+            <p className="text-black font-semibold leading-0 text-[25px]">
+              Event Outline
             </p>
-            <p className="text-black leading-0 text-[25px]">SESC - 2024/25</p>
+            {/* <p className="text-black leading-0 text-[25px]">SESC - 2024/25</p> */}
           </div>
         </div>
 
         <div
-          className={`${chakra.className} flex flex-row justify-center mt-6 mb-6`}>
-          <div className="inline-flex text-black items-center">
+          className={`${dm_Sans.className} flex flex-row justify-center mt-6 mb-6`}>
+          {/* <div className="inline-flex text-black items-center">
             <CalendarFold size={36} />
             <span className="ml-2 uppercase text-[19px] leading-none">
               17th July 2024
               <br />
               1:30 PM
             </span>
-          </div>
+          </div> */}
 
-          <div className="w-[0.5px] h-10 bg-white mx-[35px]"></div>
+          {/* <div className="w-[0.5px] h-10 bg-white mx-[35px]"></div>
 
           <div className="inline-flex text-black items-center">
             <MapPin size={36} />
@@ -52,7 +59,7 @@ export default function Home() {
               <br />
               Auditorium
             </span>
-          </div>
+          </div> */}
         </div>
 
         <div className="flex flex-col gap-y-4">
