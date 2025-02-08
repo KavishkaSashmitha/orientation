@@ -1,5 +1,5 @@
 import EventCard from "@/components/EventCard";
-import HeaderAnimation from "@/components/HeaderAnimation/HeaderAnimation";
+//import HeaderAnimation from "@/components/HeaderAnimation/HeaderAnimation";
 import { AgendaData } from "@/data/AgendaData";
 import { CalendarFold, MapPin } from "lucide-react";
 import { Chakra_Petch, Plus_Jakarta_Sans } from "next/font/google";
@@ -18,23 +18,23 @@ const chakra = Chakra_Petch({
 
 export default function Home() {
   return (
-    <main className="relative bg-[#13131391]">
-      <HeaderAnimation />
+    <main className="relative bg-white">
+      {/* <HeaderAnimation /> */}
 
       <div className="max-w-[500px] mx-auto pb-20 px-4">
         <div className={`${plusJakartaSans.className} text-center mt-10`}>
-          <h1 className="text-[46px] leading-0 text-white mb-4">Agenda</h1>
+          <h1 className="text-[46px] leading-0 text-black mb-4">Agenda</h1>
           <div className={`${chakra.className}`}>
-            <p className="text-white font-semibold leading-0 text-[25px] uppercase">
+            <p className="text-black font-semibold leading-0 text-[25px] uppercase">
               SE Orientation
             </p>
-            <p className="text-white leading-0 text-[25px]">SESC - 2024/25</p>
+            <p className="text-black leading-0 text-[25px]">SESC - 2024/25</p>
           </div>
         </div>
 
         <div
           className={`${chakra.className} flex flex-row justify-center mt-6 mb-6`}>
-          <div className="inline-flex text-white items-center">
+          <div className="inline-flex text-black items-center">
             <CalendarFold size={36} />
             <span className="ml-2 uppercase text-[19px] leading-none">
               17th July 2024
@@ -45,7 +45,7 @@ export default function Home() {
 
           <div className="w-[0.5px] h-10 bg-white mx-[35px]"></div>
 
-          <div className="inline-flex text-white items-center">
+          <div className="inline-flex text-black items-center">
             <MapPin size={36} />
             <span className="ml-2 uppercase text-[19px] leading-none">
               Main
@@ -69,6 +69,8 @@ export default function Home() {
           ))}
         </div>
       </div>
+      
+      {/* <div className="relative bg-[#13131391]"></div> */}
       <div className=" bg-white">
         <div className="max-w-[500px] py-5 mx-auto flex flex-row items-center justify-center px-[150px] ">
           <Image

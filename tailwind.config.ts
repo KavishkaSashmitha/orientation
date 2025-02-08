@@ -9,11 +9,11 @@ const config: Config = {
   theme: {
     extend: {
       backgroundImage: {
-        "grids-pattern": "url('/grids.svg')",
+        //"grids-pattern": "url('/grids.svg')",
       },
       colors: {
         black: {
-          background: "#131313",
+         background: "#131313",
         },
         purple: {
           100: "#7D61F2",
