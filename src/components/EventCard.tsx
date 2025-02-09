@@ -1,4 +1,9 @@
 import Image from "next/image";
+import {DM_Sans } from "next/font/google";
+const dm_Sans = DM_Sans({
+  weight: ["400", "500","600"],
+  subsets: ["latin"],
+});
 
 interface Props {
   title: string;
@@ -21,11 +26,11 @@ export default function EventCard({
 }: Props) {
   return (
     <div className="text-black border-b-[2px] border-b-black-background w-full flex flex-row p-4">
-      <div className="w-[100px] flex-shrink-0 mr-4 font-[500]">{time}</div>
+      <div className={`${dm_Sans.className} w-[100px] flex-shrink-0 mr-4 font-[500]`} >{time}</div>
       <div className="flex-1 flex flex-col">
         <div className="mb-4">
-          <h2 className="text-xl font-[600]">{title}</h2>
-          <p className="text-sm">{description}</p>
+          <h2 className={`${dm_Sans.className} text-xl font-[600]`}>{title}</h2>
+          <p className={`${dm_Sans.className} text-sm`}>{description}</p>
         </div>
         <div className="flex items-center">
           {imageURL && (
@@ -42,8 +47,8 @@ export default function EventCard({
           </div>
           )}
           <div className="ml-4 flex flex-col">
-            <p className="font-[500]">{name}</p>
-            <p className="font-[100]">{position}</p>
+            <p className={`${dm_Sans.className} font-[500]`}>{name}</p>
+            <p className={`${dm_Sans.className} font-[100]`}>{position}</p>
           </div>
         </div>
       </div>

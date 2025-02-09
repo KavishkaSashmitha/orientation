@@ -18,34 +18,35 @@ const chakra = Chakra_Petch({
 });
 
 const dm_Sans = DM_Sans({
-  weight: ["400", "600"],
+  weight: ["400", "500","600"],
   subsets: ["latin"],
 });
 
 export default function Home() {
   return (
+   
     <main className="relative bg-white">
       {/* <HeaderAnimation /> */}
 
       <div className="max-w-[500px] mx-auto pb-20 px-4 bg-white">
-        <div className={`${dm_Sans.className} text-left mt-10`}>
+        <div className={`${dm_Sans.className} text-left mt-0 bg-white`}>
         <Image src={AgendaIcon} alt="Agenda" className="w-[300px] h-[300px]" />
           
           <div className={`${dm_Sans.className}`}>
-            <p className="flex flex-col items-start space-y-2 pb-4 text-black font-semibold leading-0 text-[25px]">
+            <p className="flex flex-col items-start space-y-2 pb-4 text-black leading-0 text-[25px] font-[500]">
               Event Outline
             </p>
             
             <div className="flex flex-col items-start space-y-2">
             <div className="flex space-x-2">
-              <span className="px-3 py-1 border border-black-background rounded-full bg-white text-black">
+              <span className="px-3 py-1 border-2 border-black-background rounded-full bg-white text-black font-[500]">
                 1 PM – 4 PM
               </span>
-              <span className="px-3 py-1 border border-black-background rounded-full bg-gradient-to-r from-blue-500 to-blue-200 text-black">
+              <span className="px-3 py-1 border-2 border-black-background rounded-full bg-gradient-to-r from-blue-500 to-blue-200 text-black font-[500]">
                 13 February
               </span>
             </div>
-            <span className="px-3 py-1 border border-black-background rounded-full bg-gradient-to-r from-yellow-500 to-yellow-200 text-black">
+            <span className="px-3 py-1 border-2 border-black-background rounded-full bg-gradient-to-r from-yellow-500 to-yellow-200 text-black font-[500]">
               Main Auditorium
             </span>
           </div>
@@ -88,5 +89,6 @@ export default function Home() {
         </div>
       </div>
     </main>
+    
   );
 }
