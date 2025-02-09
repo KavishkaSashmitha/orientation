@@ -27,39 +27,35 @@ export default function Home() {
     <main className="relative bg-white">
       {/* <HeaderAnimation /> */}
 
-      <div className="max-w-[500px] mx-auto pb-20 px-4">
-        <div className={`${dm_Sans.className} text-center mt-10`}>
-        <Image src={AgendaIcon} alt="Agenda" className="w-[300px] h-[300px] mb-4 mx-auto" />
+      <div className="max-w-[500px] mx-auto pb-20 px-4 bg-white">
+        <div className={`${dm_Sans.className} text-left mt-10`}>
+        <Image src={AgendaIcon} alt="Agenda" className="w-[300px] h-[300px]" />
           
           <div className={`${dm_Sans.className}`}>
-            <p className="text-black font-semibold leading-0 text-[25px]">
+            <p className="flex flex-col items-start space-y-2 pb-4 text-black font-semibold leading-0 text-[25px]">
               Event Outline
             </p>
-            {/* <p className="text-black leading-0 text-[25px]">SESC - 2024/25</p> */}
+            
+            <div className="flex flex-col items-start space-y-2">
+            <div className="flex space-x-2">
+              <span className="px-3 py-1 border border-black-background rounded-full bg-white text-black">
+                1 PM – 4 PM
+              </span>
+              <span className="px-3 py-1 border border-black-background rounded-full bg-gradient-to-r from-blue-500 to-blue-200 text-black">
+                13 February
+              </span>
+            </div>
+            <span className="px-3 py-1 border border-black-background rounded-full bg-gradient-to-r from-yellow-500 to-yellow-200 text-black">
+              Main Auditorium
+            </span>
+          </div>
+
           </div>
         </div>
 
         <div
           className={`${dm_Sans.className} flex flex-row justify-center mt-6 mb-6`}>
-          {/* <div className="inline-flex text-black items-center">
-            <CalendarFold size={36} />
-            <span className="ml-2 uppercase text-[19px] leading-none">
-              17th July 2024
-              <br />
-              1:30 PM
-            </span>
-          </div> */}
-
-          {/* <div className="w-[0.5px] h-10 bg-white mx-[35px]"></div>
-
-          <div className="inline-flex text-black items-center">
-            <MapPin size={36} />
-            <span className="ml-2 uppercase text-[19px] leading-none">
-              Main
-              <br />
-              Auditorium
-            </span>
-          </div> */}
+          
         </div>
 
         <div className="flex flex-col gap-y-4">
