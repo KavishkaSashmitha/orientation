@@ -8,12 +8,9 @@ const config: Config = {
   ],
   theme: {
     extend: {
-      backgroundImage: {
-        //"grids-pattern": "url('/grids.svg')",
-      },
       colors: {
         black: {
-         background: "#131313",
+          background: "#131313",
         },
         purple: {
           100: "#7D61F2",
@@ -21,6 +18,15 @@ const config: Config = {
         green: {
           100: "#DBFD51",
         },
+      },
+      keyframes: {
+        spin: {
+          from: { transform: "rotate(0deg)" },
+          to: { transform: "rotate(360deg)" },
+        },
+      },
+      animation: {
+        spin: "spin 40s linear infinite",
       },
     },
   },
