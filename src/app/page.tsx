@@ -21,15 +21,13 @@ const plusJakartaSans = Plus_Jakarta_Sans({
 });
 
 export const metadata: Metadata = {
-  title: "Links | SESC SLIIT @ SE Orientation 2024 July",
-  description: "All agenda related to SESC SLIIT",
+  title: "Links | SESC SLIIT @ SE Inauguration 2025 February",
+  description: "All information related to SESC SLIIT",
 };
 
 export default function LinksPage() {
   return (
     <main className="relative min-h-screen bg-[#131313ba]">
-      <HeaderAnimation />
-
       <div className="max-w-[500px] mx-auto pb-14 px-4">
         <div className={`text-center mt-10`}>
           <h1
