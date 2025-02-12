@@ -20,7 +20,7 @@ export const AgendaData = [
   {
     title: "Address by Prof. Pradeep Abeygunawardhana",
     time: "1:30 PM",
-    imageURL: "/faces/", //face needs to be changed
+    imageURL: "/faces/pradeep.png", //face needs to be changed
     name: " Prof. Pradeep Abeygunawardhana",
     position: "Dean, Faculty Of Computing, SLIIT",
   },
@@ -38,14 +38,14 @@ export const AgendaData = [
   {
     title: "Speech by Ms. Madhumini Gunaratne",
     time: "2:05 PM",
-    imageURL: "/faces/", //face needs to be changed
+    imageURL: "/faces/madumini.png", //face needs to be changed
     name: "Ms. Madhumini Gunaratne",
     position: "Research Assistant, Faculty Of Computing, SLIIT",
   },
   {
     title: "Speech by Mr. Ashan Priyadarshana",
     time: "2:20 PM",
-    imageURL: "/faces/", //face needs to be changed
+    imageURL: "/faces/ashan.png",
     name: "Mr. Ashan Priyadarshana",
     position: "Tech Lead, Sysco Labs",
   },
@@ -66,7 +66,7 @@ export const AgendaData = [
   {
     title: "Speech by Ms. Subhashini Wijerathna",
     time: "3:10 PM",
-    imageURL: "/faces/",
+    imageURL: "/faces/subhashini.png",
     name: "Ms. Subhashini Wijerathna",
     position:
       "Associate Manager in Software Engineering, VitalHub Innovations Lab",
@@ -74,7 +74,7 @@ export const AgendaData = [
   {
     title: "Speech by Ms. Sandamali Vidanagamage",
     time: "3:10 PM",
-    imageURL: "/faces/",
+    imageURL: "/faces/sandamali.png",
     name: " Ms. Sandamali Vidanagamage",
     position: "Manager in Software Engineering, VitalHub Innovations Lab",
   },
