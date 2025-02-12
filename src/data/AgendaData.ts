@@ -81,8 +81,8 @@ export const AgendaData = [
   {
     title: "Vote of Thanks",
     time: "3:40 PM",
-    imageURL: "/faces/gokul.png",
-    name: "Gokul Abishek",
-    position: "Secretary, SESC 2024/25",
+    imageURL: "/faces/pawan.png",
+    name: "Pawan Senpura",
+    position: "Dev Relation, SESC 2024/25",
   },
 ];
