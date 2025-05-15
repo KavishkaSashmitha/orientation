@@ -28,17 +28,20 @@ export default function EventCard({
 }: Props) {
   return (
     <div
-      className={`text-black ${
+      className={`text-pink-100 ${
         !isLast && "border-b-[1px]"
-      } border-gray-200 w-full flex flex-row pt-2 pb-6 px-1`}>
+      } border-gray-200 w-full flex flex-row pt-2 pb-6 px-1`}
+    >
       <div
-        className={`${dm_Sans.className} text-[22px] w-[100px] flex-shrink-0 mr-4 font-[400] -mt-[2px]`}>
+        className={`${dm_Sans.className} text-[22px] w-[100px] flex-shrink-0 mr-4 font-[400] -mt-[2px]`}
+      >
         {time}
       </div>
       <div className="flex-1 flex flex-col">
         <div className="mb-4">
           <h2
-            className={`${dm_Sans.className} text-[20px] font-[600] leading-tight tracking-tight`}>
+            className={`${dm_Sans.className} text-[20px] font-[600] leading-tight tracking-tight`}
+          >
             {title}
           </h2>
           <p className={`${dm_Sans.className} text-sm`}>{description}</p>
@@ -53,7 +56,8 @@ export default function EventCard({
                   "bg-gradient-to-r from-[#4591FF] to-[#D4E4FA]",
                   "bg-gradient-to-r from-[#FFDD00] to-[#F6F9C1]",
                 ][index % 4]
-              }`}>
+              }`}
+            >
               <Image
                 src={imageURL}
                 width={100}
@@ -68,7 +72,8 @@ export default function EventCard({
               {name}
             </p>
             <p
-              className={`${dm_Sans.className} text-[15px] font-[100] -mt-[1px]`}>
+              className={`${dm_Sans.className} text-[15px] font-[100] -mt-[1px]`}
+            >
               {position}
             </p>
           </div>
