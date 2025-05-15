@@ -48,13 +48,6 @@ export default function Home() {
             backgroundSize: "full 200px",
           }}
         />
-        <Image
-          src={AsteriskArt}
-          alt="Asterisk icon"
-          width={200}
-          height={200}
-          className="absolute -top-[70px] sm:-top-[110px] -right-[75px] sm:-right-[110px] w-[200px] sm:w-[340px] animate-spin"
-        />
         <div
           className={`${dm_Sans.className} text-left bg-none rounded-lg p-4 `}
         >
@@ -64,21 +57,21 @@ export default function Home() {
             className="w-[200px] sm:w-[250px] mb-3 transition-all duration-300 ease-in-out"
           />{" "}
           <div className={`${dm_Sans.className}`}>
-            <p className="flex flex-col items-start space-y-2 mb-3 text-pink-100 leading-0 text-[25px] font-[400]">
+            <p className="flex flex-col items-start space-y-2 mb-3 text-white leading-0 text-[25px] font-[400]">
               Event Outline
             </p>
 
             <div className="flex flex-col gap-2">
               <div className="flex flex-row flex-wrap gap-2">
-                <div className="px-3 py-1 border-2 border-pink-100-background rounded-full bg-white text-pink-100 font-[500]">
+                <div className="px-3 py-1 border-2 border-pink-100-background rounded-full  text-white font-[500]">
                   1 PM – 4 PM
                 </div>
-                <div className="px-3 py-1 border-2 border-pink-100-background rounded-full bg-gradient-to-r from-[#4591FF] to-[#D4E4FA] text-pink-100 font-[500]">
+                <div className="px-3 py-1 border-2 border-white-background rounded-full  text-white font-[500]">
                   13 February
                 </div>
               </div>
               <div className="flex flex-row flex-wrap gap-2 w-full">
-                <div className=" px-3 py-1 border-2 border-pink-100-background rounded-full bg-gradient-to-r from-[#FFDD00] to-[#F6F9C1] text-pink-100 font-[500]">
+                <div className=" px-3 py-1 border-2 border-white-background rounded-full  text-white font-[500]">
                   Main Auditorium
                 </div>
               </div>

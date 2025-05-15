@@ -49,13 +49,7 @@ export default function EventCard({
         <div className="flex items-center">
           {imageURL && (
             <div
-              className={`overflow-x-clip relative min-w-[70px] w-[70px] h-[70px] border-[2px] border-[black] rounded-full ${
-                [
-                  "bg-gradient-to-r from-[#F571EA] to-[#F8D4FA]",
-                  "bg-gradient-to-r from-[#48FF57] to-[#D1FAD4]",
-                  "bg-gradient-to-r from-[#4591FF] to-[#D4E4FA]",
-                  "bg-gradient-to-r from-[#FFDD00] to-[#F6F9C1]",
-                ][index % 4]
+              className={`overflow-x-clip relative min-w-[70px] w-[70px] h-[70px] border-[2px] border-[black] rounded-full 
               }`}
             >
               <Image
